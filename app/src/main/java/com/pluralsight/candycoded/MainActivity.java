@@ -25,9 +25,12 @@ import com.loopj.android.http.TextHttpResponseHandler;
 import cz.msebera.android.httpclient.Header;
 
 
+
+
 public class MainActivity extends AppCompatActivity {
     private Candy[] candies;
     private CandyDbHelper candyDbHelper = new CandyDbHelper(this);
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -104,10 +107,16 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item){
 
+
+
         Intent infoIntent = new Intent(this, InfoActivity.class);
 
-           this.startActivity(infoIntent);
+        this.startActivity(infoIntent);
 
-           return super.onOptionsItemSelected(item);
+        return super.onOptionsItemSelected(item);
+
     }
+
+
+
 }
